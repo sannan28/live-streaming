@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      discovery:
+        server-addr: 192.168.64.14:8848
+
+dubbo:
+  consumer:
+    cluster: imRouter

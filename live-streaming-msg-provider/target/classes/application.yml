@@ -1,0 +1,67 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: live-streaming-msg-provider
+  datasource:
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 200
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.64.14:3308/live-streaming-msg?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+
+  redis:
+    host: 192.168.64.14
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        min-idle: 10
+        max-active: 100
+        max-idle: 10
+
+  kafka:
+    bootstrap-servers: 192.168.64.14:9092,192.168.64.14:9093,192.168.64.14:9094
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      retries: 3
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+dubbo:
+  application:
+    name: ${spring.application.name}
+  registry:
+    address: nacos://192.168.64.14:8848
+  protocol:
+    name: dubbo
+    port: 6061
+  consumer:
+    timeout: 20000
+
+live:
+  streaming:
+    sms:
+      ccp:
+        smsServerIp: app.cloopen.com
+        port: 8883
+        accountSId: 2c94811c9787a27f0198030f8aa01b49
+        accountToken: b0296b8727fb495f96118506c8f7dfe3
+        appId: 2c94811c9787a27f0198030f8c8d1b50
+        templateId: 1
+        testPhone: 18243083968
+
+
+
+
+
+
+
+
+
+
+

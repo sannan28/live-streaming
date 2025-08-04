@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      password: nacos
+      username: nacos
+      discovery:
+        server-addr: 192.168.64.14:8848

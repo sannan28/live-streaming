@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.live.streaming</groupId>
+    <artifactId>live.streaming</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>live-streaming-api</module>
+        <module>live-streaming-user-interface</module>
+        <module>live-streaming-user-provider</module>
+        <module>live-streaming-common-interface</module>
+        <module>live-streaming-framework</module>
+        <module>live-streaming-id-generate-provider</module>
+        <module>live-streaming-id-generate-interface</module>
+        <module>live-streaming-gateway</module>
+        <module>live-streaming-msg-interface</module>
+        <module>live-streaming-msg-provider</module>
+        <module>live-streaming-account-interfaces</module>
+        <module>live-streaming-account-provider</module>
+        <module>live-streaming-framework-web-starter</module>
+        <module>live-streaming-im-core-server</module>
+        <module>live-streaming-im-interface</module>
+        <module>live-streaming-im-core-server-interfaces</module>
+        <module>live-streaming-im-provider</module>
+        <module>live-streaming-im-router-provider</module>
+        <module>live-streaming-im-router-interface</module>
+        <module>live-streaming-living-inerfaces</module>
+        <module>live-streaming-living-provider</module>
+        <module>live-streaming-gift-interfaces</module>
+        <module>live-streaming-gift-provider</module>
+        <module>live-streaming-bank-interfaces</module>
+        <module>live-streaming-bank-provider</module>
+    </modules>
+
+
+    <properties>
+        <spring.boot.version>2.6.13</spring.boot.version>
+        <spring.cloud.version>2021.0.5</spring.cloud.version>
+        <spring.cloud.alibaba.version>2021.0.5.0</spring.cloud.alibaba.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>

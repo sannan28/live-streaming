@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: live-streaming-api
+          uri: lb://live-streaming-api
+          predicates:
+            - Path=/live/api/**
+
+live:
+  streaming:
+    gateway:
+      notCheckUrlList:
+        - /live/api/userLogin/
+        - /live/api/living/list/
+
+dubbo:
+  application:
+    name: live-streaming-gateway
+    qos-enable: false
+  registry:
+    address: nacos://192.168.64.14:8848
+  consumer:
+    timeout: 20000

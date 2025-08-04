@@ -1,0 +1,26 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /live/api
+dubbo:
+  application:
+    name: ${spring.application.name}
+  registry:
+    address: nacos://192.168.64.14:8848
+  protocol:
+    name: dubbo
+    port: 6065
+  consumer:
+    timeout: 20000
+
+spring:
+  redis:
+    host: 192.168.64.14
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        min-idle: 10        # 最小空闲连接
+        max-active: 100     # 最大连接
+        max-idle: 20        # 最大空闲连接
+

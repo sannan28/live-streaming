@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "live.streaming.gateway",
+      "type": "live.streaming.gateway.properties.GatewayApplicationProperties",
+      "sourceType": "live.streaming.gateway.properties.GatewayApplicationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "live.streaming.gateway.not-check-url-list",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "live.streaming.gateway.properties.GatewayApplicationProperties"
+    }
+  ],
+  "hints": []
+}

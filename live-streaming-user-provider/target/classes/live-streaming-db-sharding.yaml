@@ -1,0 +1,89 @@
+dataSources:
+  user_master: # 新表 重建的分表
+    dataSourceClassName: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://192.168.64.14:3308/live_streaming_user?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+
+  user_slave0: # 新表 重建的分表
+    dataSourceClassName: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://192.168.64.14:3309/live_streaming_user?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+
+
+rules:
+- !READWRITE_SPLITTING
+  # 配置读写分离
+  dataSources:
+    user_ds:
+      type: Static
+      props:
+        write-data-source-name: user_master
+        read-data-source-names: user_slave0
+
+- !SINGLE
+  defaultDataSource: user_ds   # 不分表分分库的默认数据源（这里写的是读写分离那里的user_ds
+- !SHARDING
+  tables:
+    t_user:
+      actualDataNodes: user_ds.t_user_${(0..99).collect(){it.toString().padLeft(2,'0')}}
+      tableStrategy:
+        standard:
+          shardingColumn: user_id
+          shardingAlgorithmName: t_user-inline
+      keyGenerateStrategy:
+        column: user_id
+        keyGeneratorName: snowflake
+
+    t_user_tag:
+      actualDataNodes: user_ds.t_user_tag_${(0..99).collect(){it.toString().padLeft(2,'0')}}
+      tableStrategy:
+        standard:
+          shardingColumn: user_id
+          shardingAlgorithmName: t_user_tag-inline
+      keyGenerateStrategy:
+        column: user_id
+        keyGeneratorName: snowflake
+
+    t_user_phone:
+       actualDataNodes: user_ds.t_user_phone_${(0..99).collect(){it.toString().padLeft(2,'0')}}
+       tableStrategy:
+         standard:
+           shardingColumn: user_id
+           shardingAlgorithmName: t_user_phone-inline
+
+  keyGenerators:
+    snowflake:
+      type: SNOWFLAKE
+
+  shardingAlgorithms:
+    t_user-inline:
+      type: INLINE
+      props:
+        algorithm-expression: t_user_${(user_id % 100).toString().padLeft(2,'0')}
+
+    t_user_tag-inline:
+      type: INLINE
+      props:
+        algorithm-expression: t_user_tag_${(user_id % 100).toString().padLeft(2,'0')}
+
+    t_user_phone-inline:
+      type: INLINE
+      props:
+        algorithm-expression: t_user_phone_${(user_id % 100).toString().padLeft(2,'0')}
+
+props:
+  sql-show: true  #打印sql
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  live.streaming.framework.redis.starter.config.RedisConfig,\
+  live.streaming.framework.redis.starter.key.UserProviderCacheKeyBuilder,\
+  live.streaming.framework.redis.starter.id.RedisSeqIdHelper,\
+  live.streaming.framework.redis.starter.key.MsgProviderCacheKeyBuilder,\
+  live.streaming.framework.redis.starter.key.AccountProviderCacheKeyBuilder,\
+  live.streaming.framework.redis.starter.key.ImCoreServerProviderCacheKeyBuilder,\
+  live.streaming.framework.redis.starter.key.LivingProviderCacheKeyBuilder,\
+  live.streaming.framework.redis.starter.key.ImProviderCacheKeyBuilder,\
+  live.streaming.framework.redis.starter.key.GiftProviderCacheKeyBuilder,\
+  live.streaming.framework.redis.starter.key.BankProviderCacheKeyBuilder

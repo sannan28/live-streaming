@@ -1,0 +1,46 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+    url: jdbc:shardingsphere:classpath:live-streaming-db-sharding.yaml
+    hikari:
+      pool-name: live-streaming-user-pool
+      minimum-idle: 150
+      maximum-pool-size: 300
+      connection-timeout: 4000
+      max-lifetime: 60000
+  redis:
+    host: 192.168.64.14
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        min-idle: 10        # 最小空闲连接
+        max-active: 100     # 最大连接
+        max-idle: 20        # 最大空闲连接
+
+  kafka:
+    bootstrap-servers: 192.168.64.14:9092,192.168.64.14:9093,192.168.64.14:9094
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: user-delay-delete-cache
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+
+dubbo:
+  registry:
+    address: nacos://192.168.64.14:8848
+  protocol:
+    name: dubbo
+    port: 6060
+    threads: 500
+    accepts: 500
+  consumer:
+    timeout: 20000
+  application:
+    name: ${spring.application.name}
+

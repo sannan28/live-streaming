@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "live.streaming.sms.ccp",
+      "type": "live.streaming.msg.provider.config.ApplicationProperties",
+      "sourceType": "live.streaming.msg.provider.config.ApplicationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "live.streaming.sms.ccp.account-s-id",
+      "type": "java.lang.String",
+      "sourceType": "live.streaming.msg.provider.config.ApplicationProperties"
+    },
+    {
+      "name": "live.streaming.sms.ccp.account-token",
+      "type": "java.lang.String",
+      "sourceType": "live.streaming.msg.provider.config.ApplicationProperties"
+    },
+    {
+      "name": "live.streaming.sms.ccp.app-id",
+      "type": "java.lang.String",
+      "sourceType": "live.streaming.msg.provider.config.ApplicationProperties"
+    },
+    {
+      "name": "live.streaming.sms.ccp.port",
+      "type": "java.lang.Integer",
+      "sourceType": "live.streaming.msg.provider.config.ApplicationProperties"
+    },
+    {
+      "name": "live.streaming.sms.ccp.sms-server-ip",
+      "type": "java.lang.String",
+      "sourceType": "live.streaming.msg.provider.config.ApplicationProperties"
+    },
+    {
+      "name": "live.streaming.sms.ccp.test-phone",
+      "type": "java.lang.String",
+      "sourceType": "live.streaming.msg.provider.config.ApplicationProperties"
+    }
+  ],
+  "hints": []
+}

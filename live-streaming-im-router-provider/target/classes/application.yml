@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: live-streaming-im-router-provider
+
+  redis:
+    host: 192.168.64.14
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        min-idle: 10
+        max-active: 100
+        max-idle: 20
+
+  kafka:
+    bootstrap-servers: 192.168.64.14:9092,192.168.64.14:9093,192.168.64.14:9094
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+dubbo:
+  registry:
+    address: nacos://192.168.64.14:8848
+  protocol:
+    name: dubbo
+    port: 6070
+    threads: 500
+    accepts: 500
+  consumer:
+    timeout: 20000
+  application:
+    name: ${spring.application.name}
+
+server:
+  port: 8090

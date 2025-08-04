@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: live-streaming-im-core-server
+  cloud:
+    nacos:
+      discovery:
+        ip: 127.0.0.1
+  redis:
+    host: 192.168.64.14
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        min-idle: 10
+        max-active: 100
+        max-idle: 10
+
+  kafka:
+    bootstrap-servers: 192.168.64.14:9092,192.168.64.14:9093,192.168.64.14:9094
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      retries: 3
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      ack-mode: manual
+
+live:
+  im:
+    tcp:
+      port: 8087
+    ws:
+      port: 8088
+
+dubbo:
+  application:
+    name: ${spring.application.name}
+    qos-enable: false
+  registry:
+    address: nacos://192.168.64.14:8848
+  protocol:
+    port: 6066
+  consumer:
+      timeout: 20000
+
+server:
+  port: 8086
+
+

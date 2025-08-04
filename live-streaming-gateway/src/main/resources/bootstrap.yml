@@ -1,0 +1,20 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: live-streaming-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.64.14:8848
+#      config:
+#        import-check:
+#          enabled: false
+#        file-extension: yml
+#        server-addr: 192.168.64.14:8848
+      username: nacos
+      password: nacos
+
+#  config:
+#    import:
+#      - optional:nacos:${spring.application.name}.yaml
