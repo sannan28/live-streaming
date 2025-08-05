@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cf3e6e8-68fb-4734-a6d5-c095b28d1314" name="Default Changelist" comment="" />
+    <list default="true" id="9cf3e6e8-68fb-4734-a6d5-c095b28d1314" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/controller/BankController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/controller/GiftController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/IBankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/IGiftService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/BankServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/GiftServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/req/GiftReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/req/PayProductReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/GiftConfigVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductRespVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/live-streaming-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/live-streaming-api/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/live-streaming-api/target/" />
@@ -41,7 +56,7 @@
     <session id="1255341829">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="71" />
+          <entry key="project.closed" value="72" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="3" />
@@ -61,13 +76,14 @@
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="6" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="6" />
           <entry key="project.open.time.9" value="9" />
-          <entry key="project.opened" value="76" />
+          <entry key="project.opened" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -76,13 +92,13 @@
           <entry key="class" value="29" />
           <entry key="factories" value="12" />
           <entry key="imports" value="11" />
-          <entry key="java" value="1137" />
+          <entry key="java" value="1159" />
           <entry key="log" value="1" />
           <entry key="pom" value="1" />
           <entry key="properties" value="10" />
           <entry key="sql" value="11" />
           <entry key="vmoptions" value="1" />
-          <entry key="xml" value="190" />
+          <entry key="xml" value="195" />
           <entry key="yaml" value="14" />
           <entry key="yml" value="233" />
         </counts>
@@ -90,11 +106,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="29" />
-          <entry key="JAVA" value="1137" />
+          <entry key="JAVA" value="1159" />
           <entry key="PLAIN_TEXT" value="77" />
           <entry key="Properties" value="10" />
           <entry key="SQL" value="11" />
-          <entry key="XML" value="191" />
+          <entry key="XML" value="196" />
           <entry key="YAML" value="185" />
           <entry key="spring.factories" value="12" />
         </counts>
@@ -104,21 +120,21 @@
           <entry key="dummy" value="70" />
           <entry key="factories" value="39" />
           <entry key="imports" value="9" />
-          <entry key="java" value="10936" />
+          <entry key="java" value="11298" />
           <entry key="properties" value="83" />
           <entry key="sql" value="16" />
-          <entry key="xml" value="1892" />
+          <entry key="xml" value="1899" />
           <entry key="yaml" value="571" />
           <entry key="yml" value="5166" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10936" />
+          <entry key="JAVA" value="11298" />
           <entry key="PLAIN_TEXT" value="436" />
           <entry key="Properties" value="83" />
           <entry key="SQL" value="16" />
-          <entry key="XML" value="1892" />
+          <entry key="XML" value="1899" />
           <entry key="YAML" value="5380" />
           <entry key="spring.factories" value="39" />
         </counts>
@@ -127,11 +143,140 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/resources/application.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/IGiftService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/controller/BankController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/req/PayProductReqVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/IBankService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductRespVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductItemVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/BankServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="37" column="58" lean-forward="true" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/GiftServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-494">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-gift-provider/src/main/java/live/streaming/gift/provider/rpc/SkuOrderInfoRpcImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="96" column="11" selection-start-line="90" selection-start-column="8" selection-end-line="96" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/context/LiveRequestContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-257" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-bank-interfaces/src/main/java/live/streaming/bank/interfaces/rpc/LiveCurrencyAccountRpc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live-streaming-api/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="839">
+              <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -142,8 +287,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -164,7 +309,6 @@
       <find>SkuStockInfoPO</find>
       <find>6071</find>
       <find>sendResultListenableFuture.addCallback(result</find>
-      <find>kafkaTemplate.send</find>
       <find>6072</find>
       <find>IQiyuCurrencyAccountService</find>
       <find>Qiyu</find>
@@ -180,15 +324,17 @@
       <find>PaySourceEnum.</find>
       <find>\/\*\*\n \* \@Author idea\n \* \@Date\: Created in 11\:15 2023\/8\/2\n \* \@Description\n \*\/</find>
       <find>qiyu</find>
+      <find>kafkaTemplate.send</find>
     </findStrings>
     <replaceStrings>
       <replace>liveCurrencyTradeService</replace>
       <replace>liveCurrencyAccountMapper</replace>
       <replace>liveCurrencyAccountService</replace>
       <replace />
-      <replace />
-      <replace />
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -200,20 +346,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/dao/po/PayProductPO.java" />
-        <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/dao/po/PayTopicPO.java" />
-        <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/dao/po/QiyuCurrencyAccountPO.java" />
-        <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/dao/po/QiyuCurrencyTradePO.java" />
-        <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/impl/PayProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/live-streaming-gift-provider/src/main/java/live/streaming/gift/provider/kafka/config/BatchConfig.java" />
-        <option value="$PROJECT_DIR$/live-streaming-gift-provider/src/main/java/live/streaming/gift/provider/rpc/SkuOrderInfoRpcImpl.java" />
-        <option value="$PROJECT_DIR$/live-streaming-gift-provider/src/main/java/live/streaming/gift/provider/dao/po/SkuStockInfoPO.java" />
-        <option value="$PROJECT_DIR$/live-streaming-gift-provider/src/main/java/live/streaming/gift/provider/rpc/SkuStockInfoRpcImpl.java" />
-        <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/impl/QiyuCurrencyAccountServiceImpl.java" />
-        <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/live-streaming-bank-interfaces/src/main/java/live/streaming/bank/interfaces/dto/LiveCurrencyAccountDTO.java" />
-        <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/ILiveCurrencyAccountService.java" />
         <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/ILiveCurrencyTradeService.java" />
         <option value="$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/impl/LiveCurrencyTradeServiceImpl.java" />
         <option value="$PROJECT_DIR$/live-streaming-bank-interfaces/src/main/java/live/streaming/bank/interfaces/rpc/QiyuCurrencyAccountRpc.java" />
@@ -251,6 +383,20 @@
         <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/UserLoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/sql/qiyu-live-bank.sql" />
         <option value="$PROJECT_DIR$/live-streaming-api/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/req/OnlinePkReqVO.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/controller/GiftController.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/GiftConfigVO.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/req/GiftReqVO.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/IGiftService.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/pom.xml" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/GiftServiceImpl.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductItemVO.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductVO.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductRespVO.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/req/PayProductReqVO.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/controller/BankController.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/IBankService.java" />
+        <option value="$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/BankServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -289,14 +435,12 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -604,6 +748,19 @@
               <item name="streaming" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="live-streaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="live-streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="live-streaming-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="live" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="req" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="live-streaming" type="b2602c69:ProjectViewProjectNode" />
@@ -3259,6 +3416,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3267,10 +3427,10 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="QiyuErrorException&#9;PSI&#9;JAVA://live.streaming.framework.web.starter.error.QiyuErrorException&#10;QiyuCurrencyAccountRpc&#9;PSI&#9;JAVA://live.streaming.bank.interfaces.rpc.QiyuCurrencyAccountRpc&#10;common&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-core-server/src/main/java/live/streaming/im/core/server/common&#10;LivingRoomTypeEnum&#9;PSI&#9;JAVA://live.streaming.living.inerfaces.constants.LivingRoomTypeEnum&#10;RefreshLivingRoomListJob&#9;PSI&#9;JAVA://live.streaming.living.provider.config.RefreshLivingRoomListJob&#10;LivingRoomServiceImpl&#9;PSI&#9;JAVA://live.streaming.living.provider.service.impl.LivingRoomServiceImpl&#10;IHomePageService&#9;PSI&#9;JAVA://live.streaming.api.service.IHomePageService&#10;HomePageController&#9;PSI&#9;JAVA://live.streaming.api.controller.HomePageController&#10;HomePageVO&#9;PSI&#9;JAVA://live.streaming.api.vo.HomePageVO&#10;AckImMsgHandler&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-core-server/src/main/java/live/streaming/im/core/server/handler/impl/AckImMsgHandler.java&#10;cluster&#9;PSI&#9;JAVA://live.streaming.im.router.provider.cluster.ImRouterClusterInvoker&#10;ImRouterServiceImpl&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-router-provider/src/main/java/live/streaming/im/router/provider/service/impl/ImRouterServiceImpl.java&#10;ILivingRoomRpc&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-living-inerfaces/src/main/java/live/streaming/living/inerfaces/rpc/ILivingRoomRpc.java&#10;ImOnlineRpc&#9;PSI&#9;JAVA://live.streaming.im.interfaces.interfaces.ImOnlineRpc&#10;IRouterHandlerRpc&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-core-server-interfaces/src/main/java/live/streaming/im/core/server/interfaces/rpc/IRouterHandlerRpc.java&#10;ImTokenRpc&#9;PSI&#9;JAVA://live.streaming.im.interfaces.interfaces.ImTokenRpc&#10;ImRouterRpc&#9;PSI&#9;JAVA://live.streaming.im.router.interfaces.rpc.ImRouterRpc&#10;ImRouterCluster&#9;PSI&#9;JAVA://live.streaming.im.router.provider.cluster.ImRouterCluster&#10;ImProviderCacheKeyBuilder&#9;PSI&#9;JAVA://live.streaming.framework.redis.starter.key.ImProviderCacheKeyBuilder&#10;HeartBeatImMsgHandler&#9;PSI&#9;JAVA://live.streaming.im.core.server.handler.impl.HeartBeatImMsgHandler&#10;ImMsgBizCodeEnum&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-router-interface/src/main/java/live/streaming/im/router/interfaces/contants/ImMsgBizCodeEnum.java&#10;QiyuRequestContext&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/context/QiyuRequestContext.java&#10;IUserPhoneRPC&#9;PSI&#9;JAVA://org.live.streaming.interfaces.rpc.IUserPhoneRPC&#10;IUserRpc&#9;PSI&#9;JAVA://org.live.streaming.interfaces.rpc.IUserRpc&#10;MsgProviderCacheKeyBuilder&#9;PSI&#9;JAVA://live.streaming.framework.redis.starter.key.MsgProviderCacheKeyBuilder&#10;UserProviderCacheKeyBuilder&#9;PSI&#9;JAVA://live.streaming.framework.redis.starter.key.UserProviderCacheKeyBuilder&#10;RegistryCenter&#9;PSI&#9;JAVA://org.apache.shardingsphere.schedule.core.api.ModeScheduleContext#getRegistryCenter&#10;ShardingSphereDriverURL&#9;PSI&#9;JAVA://org.apache.shardingsphere.driver.jdbc.core.driver.ShardingSphereDriverURL&#10;UserTagServiceImpl&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-user-provider/src/main/java/org/live/streaming/provider/service/impl/UserTagServiceImpl.java&#10;UserServiceImpl&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-user-provider/src/main/java/org/live/streaming/provider/service/impl/UserServiceImpl.java" />
+    <property name="SearchEverywhereHistoryKey" value="RequestContext&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/context/LiveRequestContext.java&#10;Error&#9;PSI&#9;JAVA://live.streaming.framework.web.starter.error.ErrorAssert&#10;error&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/error/LiveErrorException.java&#10;QiyuErrorException&#9;PSI&#9;JAVA://live.streaming.framework.web.starter.error.QiyuErrorException&#10;QiyuCurrencyAccountRpc&#9;PSI&#9;JAVA://live.streaming.bank.interfaces.rpc.QiyuCurrencyAccountRpc&#10;common&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-core-server/src/main/java/live/streaming/im/core/server/common&#10;LivingRoomTypeEnum&#9;PSI&#9;JAVA://live.streaming.living.inerfaces.constants.LivingRoomTypeEnum&#10;RefreshLivingRoomListJob&#9;PSI&#9;JAVA://live.streaming.living.provider.config.RefreshLivingRoomListJob&#10;LivingRoomServiceImpl&#9;PSI&#9;JAVA://live.streaming.living.provider.service.impl.LivingRoomServiceImpl&#10;IHomePageService&#9;PSI&#9;JAVA://live.streaming.api.service.IHomePageService&#10;HomePageController&#9;PSI&#9;JAVA://live.streaming.api.controller.HomePageController&#10;HomePageVO&#9;PSI&#9;JAVA://live.streaming.api.vo.HomePageVO&#10;AckImMsgHandler&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-core-server/src/main/java/live/streaming/im/core/server/handler/impl/AckImMsgHandler.java&#10;cluster&#9;PSI&#9;JAVA://live.streaming.im.router.provider.cluster.ImRouterClusterInvoker&#10;ImRouterServiceImpl&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-router-provider/src/main/java/live/streaming/im/router/provider/service/impl/ImRouterServiceImpl.java&#10;ILivingRoomRpc&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-living-inerfaces/src/main/java/live/streaming/living/inerfaces/rpc/ILivingRoomRpc.java&#10;ImOnlineRpc&#9;PSI&#9;JAVA://live.streaming.im.interfaces.interfaces.ImOnlineRpc&#10;IRouterHandlerRpc&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-core-server-interfaces/src/main/java/live/streaming/im/core/server/interfaces/rpc/IRouterHandlerRpc.java&#10;ImTokenRpc&#9;PSI&#9;JAVA://live.streaming.im.interfaces.interfaces.ImTokenRpc&#10;ImRouterRpc&#9;PSI&#9;JAVA://live.streaming.im.router.interfaces.rpc.ImRouterRpc&#10;ImRouterCluster&#9;PSI&#9;JAVA://live.streaming.im.router.provider.cluster.ImRouterCluster&#10;ImProviderCacheKeyBuilder&#9;PSI&#9;JAVA://live.streaming.framework.redis.starter.key.ImProviderCacheKeyBuilder&#10;HeartBeatImMsgHandler&#9;PSI&#9;JAVA://live.streaming.im.core.server.handler.impl.HeartBeatImMsgHandler&#10;ImMsgBizCodeEnum&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-im-router-interface/src/main/java/live/streaming/im/router/interfaces/contants/ImMsgBizCodeEnum.java&#10;QiyuRequestContext&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/context/QiyuRequestContext.java&#10;IUserPhoneRPC&#9;PSI&#9;JAVA://org.live.streaming.interfaces.rpc.IUserPhoneRPC&#10;IUserRpc&#9;PSI&#9;JAVA://org.live.streaming.interfaces.rpc.IUserRpc&#10;MsgProviderCacheKeyBuilder&#9;PSI&#9;JAVA://live.streaming.framework.redis.starter.key.MsgProviderCacheKeyBuilder&#10;UserProviderCacheKeyBuilder&#9;PSI&#9;JAVA://live.streaming.framework.redis.starter.key.UserProviderCacheKeyBuilder&#10;RegistryCenter&#9;PSI&#9;JAVA://org.apache.shardingsphere.schedule.core.api.ModeScheduleContext#getRegistryCenter&#10;ShardingSphereDriverURL&#9;PSI&#9;JAVA://org.apache.shardingsphere.driver.jdbc.core.driver.ShardingSphereDriverURL&#10;UserTagServiceImpl&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-user-provider/src/main/java/org/live/streaming/provider/service/impl/UserTagServiceImpl.java&#10;UserServiceImpl&#9;FILE&#9;file:///Users/lishengnan/projects/live-streaming/live-streaming-user-provider/src/main/java/org/live/streaming/provider/service/impl/UserServiceImpl.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1754291440996" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1754367745758" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8 (1)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -3495,12 +3655,13 @@
       <workItem from="1754000463181" duration="27848000" />
       <workItem from="1754089655491" duration="12444000" />
       <workItem from="1754176097356" duration="26040000" />
-      <workItem from="1754262467556" duration="13954000" />
+      <workItem from="1754262467556" duration="15516000" />
+      <workItem from="1754360139423" duration="6627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="598758000" />
+    <option name="totallyTimeSpent" value="606947000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3513,9 +3674,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35336193" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30329043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -3538,7 +3698,7 @@
       <window_info anchor="bottom" id="Messages" order="12" weight="0.19578686" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Key Promoter X" order="1" weight="0.32904148" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -3688,190 +3848,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-provider/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-interfaces/src/main/java/live/streaming/bank/interfaces/dto/LiveCurrencyAccountDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/ILiveCurrencyTradeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/ILiveCurrencyAccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/impl/LiveCurrencyTradeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-interfaces/src/main/java/live/streaming/bank/interfaces/rpc/LiveCurrencyAccountRpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/dao/po/LiveCurrencyAccountPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/rpc/LiveCurrencyAccountRpcImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/impl/LiveCurrencyAccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-interfaces/src/main/java/live/streaming/bank/interfaces/dto/LiveCurrencyTradeDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-interfaces/src/main/java/live/streaming/bank/interfaces/constants/PayProductTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-provider/src/main/java/live/streaming/bank/provider/service/impl/PayOrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="113" column="20" lean-forward="true" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-gateway/src/main/java/live/streaming/gateway/filter/AccountCheckFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="67" column="53" lean-forward="true" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-gift-provider/src/main/java/live/streaming/gift/provider/kafka/SendGiftConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2535">
-          <caret line="196" column="49" selection-start-line="196" selection-start-column="49" selection-end-line="196" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-im-interface/src/main/java/live/streaming/im/interfaces/enums/AppIdEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/ImServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-common-interface/src/main/java/live/streaming/interfaces/topic/ImCoreServerProviderTopicNames.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/error/ApiErrorEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-im-core-server/src/main/java/live/streaming/im/core/server/kafka/ImAckConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-gift-provider/src/main/java/live/streaming/gift/provider/service/impl/RedPacketConfigServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2460">
-          <caret line="194" column="68" selection-start-line="194" selection-start-column="68" selection-end-line="194" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-bank-interfaces/src/main/java/live/streaming/bank/interfaces/constants/PaySourceEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/error/ErrorAssert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/error/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/error/LiveBaseError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/error/LiveErrorException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -3921,10 +3901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-          <folding>
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3939,13 +3915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/context/LiveRequestContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -4046,8 +4015,210 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="285">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/error/LiveErrorException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/error/ErrorAssert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="docComment;method#isNotBlank#0;class#ErrorAssert#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/controller/LivingRoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/req/OnlinePkReqVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/controller/GiftController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/GiftConfigVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-user-provider/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-bank-interfaces/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-gift-interfaces/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-bank-interfaces/src/main/java/live/streaming/bank/interfaces/rpc/LiveCurrencyAccountRpc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/req/GiftReqVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-257" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="839">
+          <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-framework-web-starter/src/main/java/live/streaming/framework/web/starter/context/LiveRequestContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-gift-provider/src/main/java/live/streaming/gift/provider/rpc/SkuOrderInfoRpcImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="96" column="11" selection-start-line="90" selection-start-column="8" selection-end-line="96" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/IGiftService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductItemVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/resp/PayProductRespVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/vo/req/PayProductReqVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/controller/BankController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/GiftServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/IBankService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live-streaming-api/src/main/java/live/streaming/api/service/impl/BankServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="37" column="58" lean-forward="true" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
         </state>
       </provider>
     </entry>
